@@ -1,0 +1,44 @@
+{
+  "pages": [
+    "pages/datiindex/datiindex",
+    "pages/index/index",
+    "pages/top/top",
+    "pages/message/message",
+    "pages/logs/logs",
+    "pages/dati/dati",
+    "pages/errorbook/errorbook"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "答题框架",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#11cd6e",
+    "borderStyle": "white",
+    "backgroundColor": "white",
+
+    "list": [
+      {
+        "pagePath": "pages/datiindex/datiindex",
+        "iconPath": "images/write.png",
+        "selectedIconPath": "images/write.png",
+        "text": "答题"
+      },
+      {
+        "pagePath": "pages/errorbook/errorbook",
+        "iconPath": "images/ct.png",
+        "selectedIconPath": "images/ct.png",
+        "text": "错题"
+      },
+      {
+        "pagePath": "pages/top/top",
+        "iconPath": "images/ph.png",
+        "selectedIconPath": "images/ph.png",
+        "text": "排行榜"
+      }
+    ]
+  }
+}

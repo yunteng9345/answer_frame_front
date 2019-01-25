@@ -1,0 +1,17 @@
+/* pages/zixun/zixun.wxss */
+image{
+  height: 710px;position: relative;width: 100%;
+}
+text{
+  position: absolute;top:140px;left:25%;
+  font-size: 30px;font-weight: 700;
+}
+button{
+  position: absolute;top:500px;left:35%;
+}
+
+
+
+
+ 
+

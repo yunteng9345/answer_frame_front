@@ -1,0 +1,19 @@
+<!--pages/dati/dati.wxml-->
+
+<view >
+<view>第{{c}}题</view>
+{{timu.ti_name}}
+<button bindtap='butA' data-ta="{{timu.ti_a}}" data-ans="{{timu.ti_right}}" >{{timu.ti_a}} </button>
+<button bindtap='butB' data-tb="{{timu.ti_b}}" data-ans="{{timu.ti_right}}">{{timu.ti_b}} </button>
+<button bindtap='butC' data-tc="{{timu.ti_c}}"  data-ans="{{timu.ti_right}}">{{timu.ti_c}} </button>
+<button bindtap='butD' data-td="{{timu.ti_d}}" data-ans="{{timu.ti_right}}">{{timu.ti_d}} </button>
+
+<view class="r" wx:if="{{flag==true}}"><text >{{result}}</text></view>
+<view  class="e" wx:else > <text >{{result}}</text></view>
+
+<!-- <button bindtap='refresh' data-tcontnet="{{timu.ti_name}}" >上一题</button> -->
+<button bindtap='refresh' data-tcontnet="{{timu.ti_name}}" >下一题</button>
+
+
+<button bindtap='joinbook' data-tno="{{timu.tno}}" >加入错题本</button>
+</view>

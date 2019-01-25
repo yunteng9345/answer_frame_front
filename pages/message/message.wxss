@@ -1,0 +1,25 @@
+/* pages/message/message.wxss */
+.body{
+  margin-top:20%;
+}
+.time{
+  display: block;
+  text-align: center;
+  margin:1rem auto;
+}
+.row{
+  display: block;
+  height: 50px;
+  margin:0.6rem auto; 
+  position: relative;
+  clear: both;
+}
+.row text{
+  position: absolute;left:1%;width: 14%;
+}
+.row input{
+  position: absolute;left:15%;width: 85%;
+}
+button{
+  margin-top:0.6rem;
+}

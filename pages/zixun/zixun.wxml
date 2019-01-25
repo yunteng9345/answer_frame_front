@@ -1,0 +1,7 @@
+<!--pages/zixun/zixun.wxml-->
+
+<image src="{{imgdj}}"></image>
+<text>党的知识竞赛</text>
+ <button bindtap='isStart' type='primary'>开始答题</button>
+
+<!-- background: url(https:https://www.yunteng0923.cn/MakeYouListen/pic/jd.png) no-repeat;  -->

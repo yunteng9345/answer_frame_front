@@ -1,0 +1,8 @@
+/* pages/dati/dati.wxss */
+.r{
+ margin-bottom: 80px;
+
+}
+.e{
+  margin-bottom: 80px;
+}

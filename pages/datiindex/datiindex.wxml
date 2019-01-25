@@ -1,0 +1,10 @@
+<!--pages/dtindex/datiindex.wxml-->
+
+<view wx:for="{{timu}}" wx:for-index="index" wx:for-item="item" wx:key="xxx">
+<button bindtap='dati' id='{{item.t_id}}'>{{item.t_name}}</button>
+</view>
+
+
+
+
+

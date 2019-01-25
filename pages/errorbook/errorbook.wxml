@@ -1,0 +1,11 @@
+<!--pages/errorbook/errorbook.wxml-->
+<text>错题本</text>
+<!-- <view wx:for="{{timu}}" wx:key="{{items}}"> -->
+<view wx:for="{{ti}}" wx:for-index="index" wx:for-item="item" wx:key="xxx">
+<text>第{{item.guanka}}关:{{index+1}},{{item.tcontent}}</text>
+<view >
+<text >正确答案:</text>
+<text class='red'>{{item.ans}}</text>
+</view>
+<button bindtap='yichu' data-tno='{{item.tno}}'>移出错题本</button>
+</view>

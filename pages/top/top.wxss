@@ -1,0 +1,16 @@
+/* pages/top/top.wxss */
+
+
+.top{
+  display: flex;
+  direction: row;
+  margin:0.2rem;
+}
+.top text{
+  display: inline-block;font-size:12px;
+  width: 100px;margin: 0.1rem;
+}
+
+.top2{
+  margin-top:1rem;
+}

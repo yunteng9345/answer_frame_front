@@ -1,0 +1,25 @@
+<!--pages/top/top.wxml-->
+<view>
+<image class="img" style="width:340px; height: 100px;" src="{{img}}" mode="aspectFill"> 
+</image>  
+
+
+  <view class="top">
+     <text>排名</text>
+    <text>姓名</text>
+    <text>部门</text>
+    <text>用时（s）</text>
+  </view>
+
+  <view wx:for="{{topList}}" wx:key="{{index}}" wx:if="{{index<10}}" class="top top2">
+  
+ 
+  <image wx:if="{{index==0}}" style="width:40px; height: 40px;margin-right:45px;"  src="{{top1}}" ></image>
+<image wx:elif="{{index==1}}"  style="width:40px; height: 40px;margin-right:45px;"  src="{{top2}}" ></image>
+<image wx:elif="{{index==2}}" style="width:40px; height: 40px;margin-right:45px;"   src="{{top3}}" ></image> 
+    <text wx:else>{{index+1}}</text>
+    <text>{{item.name}}</text>
+    <text>{{item.branch}}</text>
+    <text>{{item.time}}秒</text>
+  </view>
+</view>

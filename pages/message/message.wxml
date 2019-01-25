@@ -1,0 +1,13 @@
+<!--pages/message/message.wxml-->
+<view class="body">
+   <text class='time'>您的用时是{{sec}}秒!</text>
+  <view   class="row">
+    <text>姓名</text>
+    <input type='text' placeholder='请填写您的姓名' bindinput="nameInput"></input>
+  </view>
+  <view  class="row">
+    <text>部门</text>
+    <input type='text' placeholder='请填写您的部门' bindinput="deptInput"></input>
+  </view>
+  <button type='primary' bindtap='submit'>提交</button>
+</view>
