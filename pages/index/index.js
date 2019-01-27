@@ -1,4 +1,4 @@
-// pages/game/game.js
+﻿// pages/game/game.js
 var app = getApp();
 function two_char(n) {
   return n >= 10 ? n : "0" + n;
@@ -9,6 +9,7 @@ var numbers = 0;
 var n=1
 Page({
   /**
+i just want to push
    * 页面的初始数据
    */
   data: {
