@@ -53,6 +53,7 @@ Page({
 
   /*
   A,B,C,D选择后判断是否正确
+  根据对错将对应题目集的答案存在缓存里
   */
   butA: function(e) {
     var that = this;
