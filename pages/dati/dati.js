@@ -59,8 +59,30 @@ Page({
   butA: function(e) {
     var that = this;
     var ta = e.currentTarget.dataset.ta
-    var ans = e.currentTarget.dataset.ans
+    var ans = e.currentTarget.dataset.ans;
 
+    /**缓存暂时解决不了，只能硬刚了！！ */
+    wx.getStorage({
+      key: 'timu',
+      success: function (res) {
+        console.log(res.data[i].ti_id);
+         /**答题记录选择的答案 */
+    wx.request({
+      url: 'http://localhost:8080/user/addSmallItem?select=a&&ti_id='+res.data[i].ti_id,
+      header: { //请求头
+        "Content-Type": "applciation/json"
+      },
+      method: "GET", //get为默认方法/POST
+      success: function (res) {
+        console.log("success") 
+      },
+      fail: function (err) {
+      }
+    })
+      }
+    }
+    )
+   
     if (ta == ans) {
 
       that.setData({
@@ -74,7 +96,6 @@ Page({
       that.setData({
         result: "错误，正确答案是：" + ans
       })
-
     }
 
 
@@ -83,6 +104,28 @@ Page({
     var that = this;
     var tb = e.currentTarget.dataset.tb
     var ans = e.currentTarget.dataset.ans
+
+    /**缓存暂时解决不了，只能硬刚了！！ */
+    wx.getStorage({
+      key: 'timu',
+      success: function (res) {
+        console.log(res.data[i].ti_id);
+        /**答题记录选择的答案 */
+        wx.request({
+          url: 'http://localhost:8080/user/addSmallItem?select=b&&ti_id=' + res.data[i].ti_id,
+          header: { //请求头
+            "Content-Type": "applciation/json"
+          },
+          method: "GET", //get为默认方法/POST
+          success: function (res) {
+            console.log("success")
+          },
+          fail: function (err) {
+          }
+        })
+      }
+    }
+    )
     if (tb == ans) {
 
       that.setData({
@@ -105,6 +148,27 @@ Page({
     var that = this;
     var tc = e.currentTarget.dataset.tc
     var ans = e.currentTarget.dataset.ans
+    /**缓存暂时解决不了，只能硬刚了！！ */
+    wx.getStorage({
+      key: 'timu',
+      success: function (res) {
+        console.log(res.data[i].ti_id);
+        /**答题记录选择的答案 */
+        wx.request({
+          url: 'http://localhost:8080/user/addSmallItem?select=c&&ti_id=' + res.data[i].ti_id,
+          header: { //请求头
+            "Content-Type": "applciation/json"
+          },
+          method: "GET", //get为默认方法/POST
+          success: function (res) {
+            console.log("success")
+          },
+          fail: function (err) {
+          }
+        })
+      }
+    }
+    )
     if (tc == ans) {
 
       that.setData({
@@ -112,7 +176,7 @@ Page({
         flag: true,
         c: i + 1
       })
-      c++ ,
+      //c++ ,
       this.refresh(e)
     } else {
       that.setData({
@@ -126,6 +190,27 @@ Page({
     var that = this;
     var td = e.currentTarget.dataset.td
     var ans = e.currentTarget.dataset.ans
+    /**缓存暂时解决不了，只能硬刚了！！ */
+    wx.getStorage({
+      key: 'timu',
+      success: function (res) {
+        console.log(res.data[i].ti_id);
+        /**答题记录选择的答案 */
+        wx.request({
+          url: 'http://localhost:8080/user/addSmallItem?select=d&&ti_id=' + res.data[i].ti_id,
+          header: { //请求头
+            "Content-Type": "applciation/json"
+          },
+          method: "GET", //get为默认方法/POST
+          success: function (res) {
+            console.log("success")
+          },
+          fail: function (err) {
+          }
+        })
+      }
+    }
+    )
     if (td == ans) {
 
       that.setData({
@@ -177,21 +262,21 @@ Page({
   /*
   上一题
   */
-  uprefresh(e) {
-    var that = this;
-    wx.getStorage({
-      key: 'timu',
-      success: function (res) {
-          that.setData({
-            timu: res.data[--i],
-            c:i-1
+  // uprefresh(e) {
+  //   var that = this;
+  //   wx.getStorage({
+  //     key: 'timu',
+  //     success: function (res) {
+  //         that.setData({
+  //           timu: res.data[--i],
+  //           c:i-1
             
-          })
-        }
+  //         })
+  //       }
 
-    })
+  //   })
 
-  },
+  // },
 
   /*
 加入错题本
