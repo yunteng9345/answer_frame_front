@@ -15,5 +15,5 @@
 <button bindtap='refresh' data-tcontnet="{{timu.ti_name}}" >下一题</button>
 
 
-<button bindtap='joinbook' data-tno="{{timu.tno}}" >加入错题本</button>
+<button bindtap='joinbook' data-tno="{{timu.ti_id}}" >加入错题本</button>
 </view>

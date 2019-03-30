@@ -282,8 +282,8 @@ Page({
 加入错题本
   */
   joinbook(e) {
-    var tno = e.currentTarget.dataset.tno
-   
+    var ti_id = e.currentTarget.dataset.ti_id
+   console.log(ti_id)
     wx.request({
       method: "GET", //get为默认方法/POST
       url: 'https://www.yunteng0923.cn/t/timu/erro',
@@ -291,7 +291,7 @@ Page({
         "content-type": "applciation/json"
       },
       data: {
-        'tno': tno,
+        'ti_id': ti_id,
       },
 
       success: function(res) {
